@@ -1,0 +1,122 @@
+*{
+     padding: 0;
+     margin: 0;
+ }
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+.main{
+   background-color: #00afff;
+    height: 530px;
+}
+.title{
+    text-align: center;
+    padding: 52px 0 70px;
+}
+.title h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 40px;
+    color: #fff;
+}
+.first-row{
+    margin-bottom: 75px;
+}
+.second-row{
+    margin-bottom: 75px;
+}
+.first-row, .second-row{
+    display: flex;
+    justify-content: space-between;
+}
+.icon__content{
+    display: flex;
+    width: 50%;
+}
+.icon__content img{
+    margin-right: 20px;
+}
+.icon-content-text{
+    color: white;
+}
+.icon-content-text h2{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+.icon-content-text p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 24px;
+}
+.button{
+    margin-bottom: -15px;
+}
+.button a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    background-color: #ff3b3b;
+    font-size: 28px;
+    text-decoration: none;
+    color: #ffecec;
+    max-width: 860px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 67px;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(196, 178, 178, 1);
+}
+.bottom{
+    padding-top: 135px;
+    padding-bottom: 125px;
+}
+.third-row{
+    display: flex;
+    justify-content: space-between;
+}
+.truck, .earth{
+    display: flex;
+    width: 50%;
+}
+.third-row__text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #50c8ff;
+}
+.truck img, .earth img{
+    margin-right: 25px;
+}
+@media screen and (max-width: 767px) {
+.main{
+    height: auto!important;
+}
+.first-row, .second-row{
+    flex-direction: column;
+}
+.icon__content{
+    margin: auto;
+}
+.first-row .icon__content:first-child{
+    margin-bottom: 60px;
+}
+.second-row .icon__content:first-child{
+    margin-bottom: 60px;
+}
+.third-row{
+    flex-direction: column;
+}
+.truck{
+    margin: 0px auto 50px ;
+}
+.earth{
+    margin: auto;
+}
+    @media screen and (max-width: 480px){
+        .icon__content{
+            margin: inherit!important;
+        }
+    }
+}

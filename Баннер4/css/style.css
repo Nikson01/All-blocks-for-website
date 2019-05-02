@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.title{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 16px;
+}
+.square{
+    height: 7px;
+    width: 7px;
+    background-color: #00adfe;
+    display: inline-block;
+}
+.line{
+    padding-top: 3px;
+}
+.line-line{
+    background-color: #00adfe;
+    width: 559px;
+    height: 1px;
+}
+.border{
+    display: flex;
+}
+.title__text h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 48px;
+    color: #55c8f4;
+    margin-bottom: 14px;
+}
+.middle{
+    margin: 0 auto;
+    max-width: 1240px;
+    display: flex;
+}
+.left-block{
+    background: url("../images/book.png") no-repeat top center;
+    background-size: cover;
+    width: 55%;
+    max-height: 760px;
+    height: 100vh;
+}
+.left-block__content{
+    text-align: center;
+    width: 74%;
+    padding-top: 193px;
+}
+.left-block__content h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: lighter;
+    color: #fff;
+    margin-bottom: 27px;
+    line-height: 30px;
+}
+.left-block__content a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+.right-block{
+    padding-top: 43px;
+}
+.right-block h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+.right-block p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    color: #333333;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+.right-block p span{
+    border-right: 2px solid #999;
+    padding-right: 20px;
+    padding-left: 17px;
+}
+.right-block p span:nth-child(2){
+    padding-left: 1px;
+}
+.right-block p span:nth-child(5){
+    border: none;
+}
+.right-block p span:last-child{
+    border: none;
+    padding-left: 0px;
+}
+.right-block p span:last-child a{
+    color: #44c3fe;
+}
+.list li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+    list-style-type: none;
+    display: flex;
+}
+.list li::before{
+    content: url("../images/strelka.png");
+    margin-right: 20px;
+}
+.foot{
+    padding-bottom: 60px;
+    padding-top: 55px;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.container a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    color: #fff;
+    line-height: 57px;
+    border-radius: 4px;
+    text-decoration: none;
+    max-width: 320px;
+    width: 100%;
+    background-color: #00afff;
+    display: block;
+    box-shadow: 0 5px 5px rgba(196, 178, 178, 1);
+}
+.container a:first-child{
+    margin-right: 35px;
+}
+.container a:last-child{
+    margin-left: 35px;
+    background-color: #ff3b3b;
+}
+@media screen and (max-width: 1140px){
+    .middle{
+        flex-direction: column;
+    }
+    .left-block{
+        margin: 0 auto;
+        width: 100%!important;
+    }
+    .right-block{
+        margin: 0 auto;
+    }
+    .title{
+        border-bottom:1px solid #00adfe;
+    }
+    .line{
+        display: none;
+    }
+    .square{
+        display: none;
+    }
+    .container{
+        flex-direction: column;
+        text-align: -moz-center;
+        text-align: -webkit-center;
+    }
+    .container a:first-child{
+        margin-right: 0px!important;
+        margin-bottom: 25px;
+    }
+    .container a:last-child{
+        margin-left: 0px!important;
+    }
+}
+@media screen and (max-width: 480px){
+    .title h1{
+        font-size: 38px;
+    }
+}

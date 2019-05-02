@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.top{
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+}
+.top h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    color: #000;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.map{
+    background: url("../images/map.png")no-repeat top center;
+    background-size: 100%;
+    height: 640px;
+    position: relative;
+}
+.point .point-red{
+    background: url("../images/point.png")no-repeat;
+    background-size: 100%;
+    width: 22px;
+    height: 29px;
+    position: absolute;
+    top: 76px;
+    left: 141px;
+    z-index: 2;
+}
+.city{
+    background: url("../images/bg-city.png")no-repeat;
+    background-size: 100%;
+    height: 183px;
+    width: 340px;
+    padding-top: 15px;
+    display: none;
+    position: absolute;
+    top: 71px;
+    left: 135px;
+    z-index: 1;
+}
+.city h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    color: #fff;
+    font-size: 27px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.city div{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin:6px auto;
+    max-width: 75%;
+    color: #fff;
+}
+.point .point-red:hover{
+    cursor: pointer;
+}
+.point:hover .city{
+    display: block;
+}
+.point .point-red-two{
+    position: absolute;
+    top:234px;
+    left: 44px;
+}
+.city-two{
+    position: absolute;
+    top: 107px;
+    left: 38px;
+}
+.point .point-red-three{
+    position: absolute;
+    top: 268px;
+    left: 255px;
+}
+.city-three{
+    position: absolute;
+    top: 145px;
+    left: 247px;
+}
+.services{
+    position: absolute;
+    top: 500px;
+    left: 209px;
+}
+.services span:first-child{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+.services span:nth-child(2){
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+}
+.services span:last-child{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 34px;
+}
+.cities a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+}
+.cities a:hover{
+    color: #65bfe8;
+    border-bottom: #65bfe8 1px solid;
+}
+.cities__row-first, .cities__row-second{
+    text-align: center;
+}
+.cities__row-first a:before, .cities__row-second a:before{
+    content: url("../images/strelka-blue.png");
+    vertical-align: super;
+}
+.text{
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.bottom{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.bottom h1{
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+.columns-row{
+    margin-bottom: 40px;
+}
+.columns-row div:nth-child(1){
+    width: 49%;
+    display: inline-block;
+}
+.columns-row div:nth-child(2){
+    display: inline-block;
+    width: 49%;
+}
+.columns-row div p{
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    vertical-align: top;
+}
+.columns-row div p span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    color: #00acef;
+    text-transform: uppercase;
+}
+.columns-row div img{
+    margin-right: 15px;
+}
